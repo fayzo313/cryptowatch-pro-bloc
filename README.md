@@ -1,16 +1,14 @@
-# bloc
+# CryptoWatch Pro — Clean Architecture Sandbox (BLoC)
 
-A new Flutter project.
+A high-performance Cross-Platform Market Monitor showcasing senior-level Flutter code structure, production-ready state synchronization, and strict feature separation.
 
-## Getting Started
+## 🚀 Key Architectural Pillars Illustrated
+* **Feature-First Domain Isolation:** Separates data models from core enterprise business rules (`entities`). The domain layer contains zero dependencies on external modules (`Dio`, `SharedPreferences`).
+* **Optimized Rendering Handshakes:** Employs explicit bounding properties (`itemExtent`) inside view structures to accelerate size recalculations and enforce zero dropped frames during lists scrolling.
+* **Offline-First Resilience:** Employs local persistence interceptors. The UI loads instant local caches seamlessly before spawning background HTTP fetch triggers.
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 📦 Tech Stack & Core Libraries
+* **State Management:** Flutter BLoC (with strict Equatable value comparisons)
+* **Network Handler:** Dio Client equipped with custom Global Error Interceptors
+* **Dependency Injection:** GetIt Service Locator
+* **Local Caching:** SharedPreferences Persistence
